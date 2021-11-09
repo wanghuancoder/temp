@@ -2,6 +2,7 @@
 
 export CUDA_VISIBLE_DEVICES=4
 export FLAGS_USE_STANDALONE_EXECUTOR=0
+export FLAGS_eager_delete_tensor_gb=0.5
 
 
 python3.7 ./ppcls/static/train.py -c ./ResNet50.yaml > ./new_executor_log/ResNet50_old_96.txt
